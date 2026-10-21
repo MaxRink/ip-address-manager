@@ -192,3 +192,17 @@ updates:
   - "ok-to-test"
 
 ## release-1.13 branch config ends here
+- package-ecosystem: docker
+  directories:
+  - /
+  - /hack/boilerplate
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 5
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
